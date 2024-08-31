@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+// DAY MODE
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+}
+
+// DAY MODE
+.light {
+    background-color: white;
+    color: black;
+}
+
+// NITE MODE
+.dark {
+    background-color: black;
+    color: white;
+}

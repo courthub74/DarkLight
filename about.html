@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Check for the localStorage so the page refers to th localStorage for screen mode -->
+     <script>
+        let localS = localStorage.getItem('theme');
+
+        if (localS === 'dark') {
+            document.documentElement.setAttribute('screen_mode', 'dark')
+        }
+     </script>
+
+    <link rel="stylesheet" href="./root.css">
+</head>
+<body>
+
+    <div class="the_site">
+        <h1>This is the About Page</h1>
+
+        <p>This should follow the mode selected on the Home page.</p>
+
+        <a href="./index.html">Back to home</a>
+    </div>
+    
+</body>
+</html>

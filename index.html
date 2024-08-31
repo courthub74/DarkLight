@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" screen_mode="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light</title>
+
+    <!-- Check Local Storage ('theme') to keep the screen mode as newTheme -->
+     <script>
+        let localS = localStorage.getItem('theme')
+
+        // Conditional to check the localS and set it accordingly
+        if (localS === 'dark'){
+            // set the 'screen_mode' to dark
+            document.documentElement.setAttribute('screen_mode', 'dark');
+        }
+     </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./root.css">
+</head>
+<body>
+    
+
+   <div class="the_site">
+        <nav>
+            <!-- Switch Theme Button -->
+            <button id="switch_button">Switch Theme</button>
+        </nav>
+
+        <header>
+            <p>Time Clock</p>
+        </header>
+
+        <form action="#">
+            <!-- First Name -->
+            <div class="input_div">
+                <label>Firstname:</label>
+                <input type="text" id="firstname">
+            </div>
+
+            <!-- Last Name -->
+             <div class="input_div">
+                <label>Lastname:</label>
+                <input type="text" id="lastname">
+             </div>
+
+             <!-- Pin Number -->
+              <div class="input_div">
+                <label>Pin #:</label>
+                <div class="pin_field">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+               <div class="submit_button">
+                    <button class="submit_">Submit</button>
+               </div>
+
+               <!-- Registration -->
+                <div class="registration_div">
+                    <a href="#">Create an account</a>
+                </div>
+        </form>
+        
+   </div>
+
+
+   <!-- JavaScript for Light/Dark Mode -->
+    <script src="app.js"></script>
+
+    <!-- JS for Pin Fields -->
+    
+</body>
+</html>
