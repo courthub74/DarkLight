@@ -42,6 +42,19 @@ nav {
 /* Screen Mode Switch Button */
 #switch_button {
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode_logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#day {
+    position: absolute;
 }
 
 /* The Header */
