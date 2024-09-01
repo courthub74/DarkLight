@@ -9,12 +9,13 @@
 :root[screen_mode = "light"] {
     background-color: white;
     color: black;
+    color: #181717;
 }
 
 /* Nite Data Theme */
 :root[screen_mode = "dark"] {
     background-color: black;
-    background-color: #181717;
+    background-color: #1E1E1E;
     color: white;
 }
 
@@ -49,7 +50,10 @@ nav {
     align-items: center;
     border: none;
     margin-top: 2em;
-
+    /* color: white; */
+    color: black;
+    background-color: gray;
+    padding: 1em;
 }
 
 .mode_logos {
@@ -84,20 +88,20 @@ nav {
 header {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 .app_stage {
     background-color: gray;
     background-color: #181717;
-    background-color: black;
+    /* background-color: black; */
     font-size: 1rem;
     font-weight: bold;
     color: black;
     color: white;
     color: gray;
     text-align: center;
-    margin-top: -2em;
+    margin-top: -1.5em;
     padding: .5em 4em .5em 4em;
 }
 
@@ -135,7 +139,35 @@ form {
     outline: none;
 }
 
-/*  */
+/* =========================== */
+/* ====THE ACCOUNT BUTTONS==== */
+/* =========================== */
+.acct_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 1.5em;
+}
+
+/* Employer Buttons */
+.acct_type {
+    padding: 3em 2em;
+    background-color: #181717;
+    color: white;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.acct_type.clicked {
+    background-color: grey;
+    color: black;
+}
 /* The Pin Number field */
 .pin_field {
     display: flex;
@@ -162,11 +194,13 @@ form {
     margin-top: 1em;
 }
 .submit_ {
-    padding: 1em 5.5em;
+    padding: 1em 6.5em;
     background-color: gray;
+    background-color: #393636;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
 }
 
 /* Registration */
@@ -177,7 +211,7 @@ form {
 a {
     font-weight: bold;
     text-decoration: none;
-    /* color: black; */
-    font-size: 1.2rem;
+    color: black;
+    font-size: 1rem;
     color: rgb(53, 123, 237);
 }
