@@ -87,7 +87,7 @@ nav {
 header {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 .app_stage {
@@ -165,11 +165,13 @@ form {
     margin-top: 1em;
 }
 .submit_ {
-    padding: 1em 5.5em;
+    padding: 1em 6.5em;
     background-color: gray;
+    background-color: #393636;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
 }
 
 /* Registration */
@@ -180,7 +182,7 @@ form {
 a {
     font-weight: bold;
     text-decoration: none;
-    /* color: black; */
-    font-size: 1.2rem;
+    color: black;
+    font-size: 1rem;
     color: rgb(53, 123, 237);
 }
