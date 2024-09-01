@@ -9,3 +9,5 @@
 \*Add All Pages
 
 \*Create Account Logins data base
+
+\*Add Registration feature
