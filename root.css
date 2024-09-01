@@ -81,9 +81,19 @@ nav {
 
 /* The Header */
 header {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 1em;
+}
+
+.app_stage {
+    background-color: gray;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: -2em;
+    padding: .5em 4em .5em 4em;
 }
 
 /* **************** */
@@ -111,15 +121,15 @@ form {
     padding: 1em 3em;
     border: none;
     background-color: grey;
+    text-align: center;
     /* background: none; */
 }
 
-/* .input_div input[screen_mode="dark"] {
-    border: 1px solid white;
-    background-color: black;
-} */
+.input_div input:focus {
+    outline: none;
+}
 
-
+/*  */
 /* The Pin Number field */
 .pin_field {
     display: flex;
@@ -134,6 +144,7 @@ form {
     border-radius: 5px;
     outline: none;
     transition: all .1s;
+    /* box-sizing: border-box; */
     /* border: 1px solid; */
 }
 
@@ -151,6 +162,7 @@ form {
     background-color: gray;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 /* Registration */
@@ -163,5 +175,5 @@ a {
     text-decoration: none;
     /* color: black; */
     font-size: 1.2rem;
-    color: rgb(16, 16, 172);
+    color: rgb(53, 123, 237);
 }
