@@ -54,7 +54,23 @@ nav {
 }
 
 #day {
+    width: 2em;
+    height: 2em;
     position: absolute;
+    opacity: 0;
+}
+
+#day.appear {
+    opacity: 1;
+}
+
+#nite {
+    width: 2em;
+    height: 2em;
+}
+
+#nite.dissapear {
+    opacity: 0;
 }
 
 /* The Header */
