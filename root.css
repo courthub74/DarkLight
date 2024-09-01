@@ -9,12 +9,13 @@
 :root[screen_mode = "light"] {
     background-color: white;
     color: black;
+    color: #181717;
 }
 
 /* Nite Data Theme */
 :root[screen_mode = "dark"] {
     background-color: black;
-    background-color: #181717;
+    background-color: #1E1E1E;
     color: white;
 }
 
@@ -93,14 +94,14 @@ header {
 .app_stage {
     background-color: gray;
     background-color: #181717;
-    background-color: black;
+    /* background-color: black; */
     font-size: 1rem;
     font-weight: bold;
     color: black;
     color: white;
     color: gray;
     text-align: center;
-    margin-top: -2em;
+    margin-top: -1.5em;
     padding: .5em 4em .5em 4em;
 }
 
@@ -138,7 +139,31 @@ form {
     outline: none;
 }
 
-/*  */
+/* =========================== */
+/* ====THE ACCOUNT BUTTONS==== */
+/* =========================== */
+.acct_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 1.5em;
+}
+
+/* Employer Buttons */
+.acct_type {
+    padding: 3em 2em;
+    background-color: #181717;
+    color: white;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 /* The Pin Number field */
 .pin_field {
     display: flex;

@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Card</title>
+
+    <!-- Check for the localStorage so the page refers to th localStorage for screen mode -->
+    <script>
+        let localS = localStorage.getItem('theme');
+
+        if (localS === 'dark') {
+            document.documentElement.setAttribute('screen_mode', 'dark')
+        }
+     </script>
+
+    <link rel="stylesheet" href="./root.css">
 </head>
 <body>
 
-    < class="the_site">
+    <div class="the_site">
         <nav>
             <!-- Switch Theme Button -->
             <button id="switch_button">
@@ -24,22 +35,24 @@
         </header>
 
         <div class="app_stage">
-            <p>Account Type</p>
+            <p>Account</p>
         </div>
 
         <form action="#">
 
-            <!-- Employer -->
-            <button class="acct_type" id="employer_">
-                <h3>Employer</h3>
-                <p>You can see all hours entered by employees</p>
-            </button>
+            <div class="acct_buttons">
+                <!-- Employer -->
+                <button class="acct_type" id="employer_">
+                    <h3>Employer</h3>
+                    <p>See hours entered by employees</p>
+                </button>
 
-            <!-- Employee -->
-             <button class="acct_type" id="employee_">
-                <h3>Employee</h3>
-                <p>Uses the app to enter the hours</p>
-             </button>
+                <!-- Employee -->
+                <button class="acct_type" id="employee_">
+                    <h3>Employee</h3>
+                    <p>Use the app to enter the hours</p>
+                </button>
+            </div>
 
             <!-- Submit Button -->
             <div class="submit_button">
@@ -48,6 +61,9 @@
 
         </form>
     </div>
+
+     <!-- JavaScript for Light/Dark Mode -->
+     <script src="app.js"></script>
     
 </body>
 </html>
