@@ -164,6 +164,10 @@ form {
     align-items: center;
     gap: 1em;
 }
+.acct_type.clicked {
+    background-color: grey;
+    color: black;
+}
 /* The Pin Number field */
 .pin_field {
     display: flex;
