@@ -14,6 +14,7 @@
 /* Nite Data Theme */
 :root[screen_mode = "dark"] {
     background-color: black;
+    background-color: #181717;
     color: white;
 }
 
@@ -88,9 +89,13 @@ header {
 
 .app_stage {
     background-color: gray;
+    background-color: #181717;
+    background-color: black;
     font-size: 1rem;
     font-weight: bold;
     color: black;
+    color: white;
+    color: gray;
     text-align: center;
     margin-top: -2em;
     padding: .5em 4em .5em 4em;
