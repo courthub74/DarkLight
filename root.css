@@ -116,6 +116,7 @@ form {
 .input_div {
     display: flex;
     flex-direction: column;
+    gap: .5em;
 }
 
 .input_div label {
@@ -138,7 +139,7 @@ form {
 /* The Pin Number field */
 .pin_field {
     display: flex;
-    gap: 1em;
+    display: inline-block;
 }
 
 .pin_field input {
@@ -148,9 +149,7 @@ form {
     text-align: center;
     border-radius: 5px;
     outline: none;
-    transition: all .1s;
-    /* box-sizing: border-box; */
-    /* border: 1px solid; */
+    margin: 0 0 0 .5em;
 }
 
 .pin_field input:focus {
